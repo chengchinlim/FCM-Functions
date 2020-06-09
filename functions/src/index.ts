@@ -7,7 +7,7 @@ exports.GOOGLE_APPLICATION_CREDENTIALS = '/Users/chengchinlim/BackendProjects/fi
 admin.initializeApp({
     credential: admin.credential.applicationDefault(),
     databaseURL: "https://cloudmessaging-5227.firebaseio.com"
-  });
+});
 
 export const helloWorld = functions.https.onRequest((request, response) => {
     response.send("Hello from Firebase!");
